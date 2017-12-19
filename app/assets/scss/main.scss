@@ -1,0 +1,50 @@
+$color: #626567;
+
+body {
+  color: $color;
+}
+h2 {
+	color: #1B2631;
+	font-weight: bold;
+}
+h3 {
+	color: #424949;
+}
+.TableVisits{
+	border-style: groove;
+	max-height: 60rem;
+	overflow-y: scroll;
+}
+.iconList{
+	color: #A9CCE3;
+}
+.icon{
+	color: #76D7C4;
+}
+.Imagen{
+	margin-bottom: 3%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border-radius: 50%;
+	object-fit: cover;
+	transform: scale(1, 1);
+}
+.Empty{
+	color: lightgrey;
+}
+.DefaultDetail{
+	text-align: center;
+	line-height: 500px;
+	color: lightgrey;
+}
+#fav{
+	color: #DAA520;
+	float: right;
+	margin-right: 60px;
+}
+#nofav{
+	color: lightgrey;
+	float: right;
+	margin-right: 60px;
+}

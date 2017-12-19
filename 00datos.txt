@@ -1,0 +1,8 @@
+Angel Silvan Camiña
+Paula González Gómez
+Grupo 758
+
+Mejoras:
+	- Redux (tres acciones y dos reducers)
+	- React-Bootstrap
+	- Funcionalidad del CRM -> Marcar/Desmarcar visita como favorita
