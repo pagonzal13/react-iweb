@@ -6,17 +6,17 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
 describe('App Component', () => {
-  let wrapper;
+    let wrapper;
 
-  beforeEach(() => {
-    wrapper = shallow(<App />);
-  });
+    beforeEach(() => {
+        wrapper = shallow(<App />);
+    });
 
-  it('should exist', () => {
-    expect(wrapper).toBeTruthy();
-  });
-  
-  it('should have one heading', () => {
-    expect(wrapper.find('#heading').type()).toEqual('h2');
-  });
+    it('should exist', () => {
+        expect(wrapper).toBeTruthy();
+    });
+
+    it('should have one heading', () => {
+        expect(wrapper.find('#heading').type()).toEqual('h2');
+    });
 });

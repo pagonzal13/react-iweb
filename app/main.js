@@ -4,7 +4,7 @@ import ReduxProvider from './components/ReduxProvider.jsx';
 import { AppContainer } from 'react-hot-loader';
 
 const render = (Component) => {
-  ReactDOM.render(
+    ReactDOM.render(
     <ReduxProvider/>,
     document.getElementById('root'),
   );

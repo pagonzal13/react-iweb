@@ -7,13 +7,13 @@ import { AppContainer } from 'react-hot-loader';
 import App from './App';
 
 export default class ReduxProvider extends React.Component {
-	constructor(props) {
-		super(props);
-		this.initialState = {visits: null, visitaSelect: null};
-		this.store = this.configureStore();
-	}
-	render() {
-		return (
+    constructor(props) {
+        super(props);
+        this.initialState = {visits: null, visitaSelect: null};
+        this.store = this.configureStore();
+    }
+    render() {
+        return (
 			<AppContainer>
 				<Provider store={ this.store }>
 					<div>
@@ -21,16 +21,16 @@ export default class ReduxProvider extends React.Component {
 					</div>
 				</Provider>
 			</AppContainer>
-		);
-	}
-	configureStore() {
-		const store = createStore(GlobalState, this.initialState);
-		if (module.hot) {
-			module.hot.accept('./../reducers/reducers', () => {
-				const nextRootReducer = require('./../reducers/reducers').default;
-				store.replaceReducer(nextRootReducer);
-			});
-		}
-		return store;
-	}
+        );
+    }
+    configureStore() {
+        const store = createStore(GlobalState, this.initialState);
+        if (module.hot) {
+            module.hot.accept('./../reducers/reducers', () => {
+                const nextRootReducer = require('./../reducers/reducers').default;
+                store.replaceReducer(nextRootReducer);
+            });
+        }
+        return store;
+    }
 }

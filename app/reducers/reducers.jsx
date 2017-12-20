@@ -3,8 +3,8 @@ import visitaSelectReducer from './visitaSelectReducer.jsx';
 import visitsReducer from './visitsReducer.jsx';
 
 const GlobalState = combineReducers({
-	visits: visitsReducer,
-	visitaSelect: visitaSelectReducer,
+    visits: visitsReducer,
+    visitaSelect: visitaSelectReducer,
 });
 
 export default GlobalState;
